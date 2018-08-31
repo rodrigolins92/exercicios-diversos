@@ -19,15 +19,16 @@ arquivoUsuario.write('Rodrigo\nRoberto\nFernanda\nMarcia')
 
 arquivoUsuario = open(nomeArquivo, 'r')
 
-print(arquivoUsuario.readlines())
-
 arquivoUsuario.close()
 
 arquivoUsuario = open(nomeArquivo, 'a')
 
 arquivoUsuario.write('\nNovo Nome')
 
-print(arquivoUsuario.readlines())
+arquivoUsuario.close()
 
+arquivoUsuario = open(nomeArquivo, 'r')
+
+arquivoUsuario.readline()
 
 arquivoUsuario.close()
